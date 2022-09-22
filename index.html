@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body id="body">
+    <div id="main">
+        <div id="main-of-signup">
+            <div class="main-heading">Sign-Up Form</div>
+            <div id="signup-body">
+                <form id="signup-form" onSubmit="signUp(event)">
+                    <div class="rows">
+                        <div class="columns">
+                            Username
+                            <input type="text" class="txt-inp" id="username-inp" placeholder="Enter Username" maxlength="30">
+                        </div>
+                        <div class="columns">
+                            Email
+                            <input type="email" class="txt-inp" id="email-inp" placeholder="Enter email">
+                        </div>
+                    </div>
+                    <div class="rows">
+                        <div class="columns">
+                            Password
+                            <input type="text" class="txt-inp" id="password-inp" placeholder="Enter Password">
+                        </div>
+                        <div class="columns">
+                            Confirm Password
+                            <input type="text" class="txt-inp" id="conf-password-inp" placeholder="Confirm Password">
+                        </div>
+                    </div>
+                    <div class="rows">
+                        <div class="columns">
+                            Address
+                            <input type="text" class="txt-inp" id="address-inp" placeholder="Enter Address">
+                        </div>
+                        <div class="columns">
+                            Contact Number
+                            <input type="number" class="txt-inp" id="number-inp"  placeholder="Enter Phone Number">
+                        </div>
+                    </div>
+                    <div class="rows">
+                        <div class="columns">
+                            Gender :
+                            <input type="radio" class="txt-radio" name="r1" value="male"> Male
+                            <input type="radio" class="txt-radio" name="r1" value="female"> Female
+                        </div>
+                        <div class="columns">
+                            Date of Birth
+                            <input type="date" id="dob-inp" placeholder="Enter Phone Number">
+                        </div>
+                    </div>
+                    <div class="rows">
+                        <div class="columns">
+                            Postal Code
+                            <input type="number" minlength="5" id="postalcode-inp" placeholder="Enter Postal Code" maxlength="5">
+                        </div>
+                        <div class="columns">
+                            Profile Picture
+                            <input type="file" id="userpic-inp" accept="Image/*">
+                        </div>
+                    </div>
+                    <div class="rows">
+                            <input type="submit" value="Sign Up" id="signup-btn">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- vvvvvv -->
+        <div id="main-of-signin">
+            <div class="main-heading">Sign-In Form</div>
+            <div id="signin-body">
+                <form id="signin-form" onSubmit="signIn(event)">
+                    <div class="rows">
+                        Verify your Registration  
+                    </div>
+                    <div class="rows">
+                        <div class="columns">
+                            Email
+                            <input type="email" class="txt-inp" id="email-inp2" placeholder="Enter email">
+                        </div>
+                    </div>
+                    <div class="rows">
+                        <div class="columns">
+                            Password
+                            <input type="text" class="txt-inp" id="password-inp2" placeholder="Enter Password">
+                        </div>
+                    </div>
+                    <div class="rows">
+                        <a id="link"><input type="submit" value="Sign In" id="signin-btn"></a>
+                    </div>
+                </form>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

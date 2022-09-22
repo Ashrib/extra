@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+</head>
+<body>
+    <div id="main-container">
+        <div id="head">
+            <div id="head-span">Dashboard</div>
+            <div id="other-options">
+                <div id="menu-options" onClick="openMenu()">
+                    <span title="menu" class="material-symbols-outlined">menu</span>
+                </div>
+                <div id="logout" onClick="logOut()">
+                    <span title="logout" class="material-symbols-outlined">logout</span>
+                </div>
+            </div>
+        </div>
+        <!-- dropdown -->
+        <div id="dropdown">
+            <div class="dropdown-options" onClick="profileModal()">Profile</div>
+            <div class="dropdown-options" onClick="projects('proj-modal-container')">Projects</div>
+        </div>
+        <!-- dropdown end-->
+        <!-- profile modal -->
+        <div id="modal-container">
+            <div id="modal-body">
+                <div id="close-modal"><span id="close-font" onClick="closeModal(event)">X</span></div>
+                <div id="modal-heading">Profile Information</div>
+                <div class="modal-row">
+                        <div class="modal-col">
+                            <span class="info-property">Username:</span>
+                            <span class="info-property-value"></span>
+                        </div>
+                        <div class="modal-col">
+                            <span class="info-property">Email:</span>
+                            <span class="info-property-value"></span>
+                        </div>
+                </div>
+                <div class="modal-row">
+                    <div class="modal-col">
+                        <span class="info-property">Password:</span>
+                        <span class="info-property-value"></span>
+                    </div>
+                    <div class="modal-col">
+                        <span class="info-property">Contact Number:</span>
+                        <span class="info-property-value"></span>
+                    </div>
+                </div>
+                <div class="modal-row">
+                    <div class="modal-col">
+                        <span class="info-property">Address:</span>
+                        <span class="info-property-value"></span>
+                    </div>
+                    <div class="modal-col">
+                        <span class="info-property">Gender:</span>
+                        <span class="info-property-value"></span>
+                    </div>
+                </div>
+                <div class="modal-row">
+                    <div class="modal-col">
+                        <span class="info-property">Postal code:</span>
+                        <span class="info-property-value"></span>
+                    </div>
+                    <div class="modal-col">
+                        <span class="info-property">Date of Birth:</span>
+                        <span class="info-property-value"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- profile modal end -->
+        <!-- projects modal -->
+        <div id="proj-modal-container">
+            <div id="proj-modal-body">
+                <div id="proj-close-modal"><span id="proj-close-font" onClick="closeModal(event)">X</span></div>
+                <div id="proj-modal-heading">Projects</div>
+                <div id="all-projects">
+                    <a href="https://beginners-assignments.web.app/js%20assignments/JSON/Football%20Match%20Details/index.html" target="_blank"><div class="project">Football WorldCup</div></a>
+                    <a href="https://beginners-assignments.web.app/js%20assignments/objects/Shapes%20by%20object/index.html" target="_blank"><div class="project">Shapes with Object</div></a>
+                    <a href="https://beginners-assignments.web.app/js%20assignments/JSON/Match%20days%20Details/index.html" target="_blank"><div class="project">Match Days</div></a>
+                </div>
+            </div>
+        </div>
+        <!-- head end -->
+        <div id="body"></div>
+    </div>
+
+    <script src="../app.js"></script>
+    <script src="./dashboard.js"></script>
+</body>
+</html>
